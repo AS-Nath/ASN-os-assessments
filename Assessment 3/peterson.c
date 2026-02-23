@@ -12,8 +12,6 @@ void* process(void* arg) {
     int j = 1 - i;
 
     for (int k = 0; k < 5; k++) {
-
-        // Entry section
         flag[i] = true;
         turn = j;
 
@@ -23,7 +21,6 @@ void* process(void* arg) {
         counter++;
         printf("Process %d in CS. Counter = %d\n", i, counter);
 
-        // Exit section
         flag[i] = false;
     }
 
