@@ -74,7 +74,6 @@ void consume() {
 
 int main(void) {
     arr = (int *)calloc(N, sizeof(int));
-    // Driver code not written. 
     printf("Enter a sequence of P (Produce) and C (Consume) to process : \n"); 
     char* sequence = (char *)malloc(100 * sizeof(char)); 
     scanf("%s", sequence); 

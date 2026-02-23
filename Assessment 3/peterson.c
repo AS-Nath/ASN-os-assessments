@@ -44,7 +44,7 @@ int main() {
 
     printf("Final Counter = %d\n", counter);
 
-    free(flag);
+    free((void *)flag);
     free(id);
     return 0;
 }

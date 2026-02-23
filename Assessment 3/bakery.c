@@ -78,8 +78,8 @@ int main() {
 
     printf("Final Counter = %d\n", counter);
 
-    free(choosing);
-    free(number);
+    free((void *)choosing);
+    free((void *)number);
     free(threads);
     free(ids);
 
