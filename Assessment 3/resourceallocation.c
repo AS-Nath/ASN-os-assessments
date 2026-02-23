@@ -1,4 +1,4 @@
-#include <stdio.h> // TODO 
+#include <stdio.h> 
 #include <stdlib.h>
 #include <string.h>
 #include <stdbool.h>
@@ -58,7 +58,7 @@ int main(void) {
                         work[j] += allocation[i][j]; 
                     }
                     finish[i] = true; 
-                    safesequence = (safesequence, (safelen + 1) * sizeof(int)); 
+                    safesequence = realloc(safesequence, (safelen + 1) * sizeof(int)); 
                     safelen += 1; 
                     safesequence[safelen - 1] = i; 
                 }
